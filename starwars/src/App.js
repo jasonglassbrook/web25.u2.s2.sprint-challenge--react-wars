@@ -12,7 +12,9 @@ import "./App.css";
   STATES
 ***************************************/
 const init = {
-  "people" : {},
+  "people" : {
+    "results" : [],
+  },
   "query" : {}, // if ever wanted to specify a person's id or something else
 };
 
@@ -37,6 +39,16 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <div className="people deck">
+        {people.results.map ((el) => (
+          <div className="people card" key={el.url}>
+            <h3>{el.name}</h3>
+            <p>Homeworld: {el.homeworld}</p>
+            <p>Gender: {el.gender}</p>
+            <p>Born: {el.birth_year}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
