@@ -18,7 +18,7 @@ const PeopleGrid = (props) => {
     <Container className="people grid card-deck">
       <Row>
         {props.people.map ((el) => (
-          <Col key={el.url} xs="12" sm="6" md="4" lg="4" xl="2">
+          <Col key={el.url} xs="12" sm="6" md="4">
             <PeopleCard data={el}/>
           </Col>
         ))}
