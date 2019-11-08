@@ -13,7 +13,7 @@ import "./App.css";
 ***************************************/
 const init = {
   "people" : {},
-  "query" : {}, // if ever wanted to specify a person's id or something else
+  "query" : { "id" : 10 }, // if ever wanted to specify a person's id or something else
 };
 
 const fetchPeople = fetchData (peopleAPI , init.people);
