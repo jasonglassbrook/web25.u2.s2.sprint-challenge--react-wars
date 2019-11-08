@@ -12,9 +12,9 @@ export const fetchData = (api , initData) => (query , setData) => {
     })())
     .then ((response) => {
       console.log ("--- success! ---");
-      // /* TESTING */ console.log (response);
+      /* TESTING */ console.log (response);
       const data = response.data;
-      // /* TESTING */ console.log (data);
+      /* TESTING */ console.log (data);
       setData (data);
     })
     .catch ((error) => {
@@ -23,7 +23,7 @@ export const fetchData = (api , initData) => (query , setData) => {
         ...initData,
         "error" : error,
       };
-      // /* TESTING */ console.log (data);
+      /* TESTING */ console.log (data);
       setData (data);
     })
     .finally (() => {
