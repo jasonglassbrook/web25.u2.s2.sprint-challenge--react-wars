@@ -4,6 +4,7 @@ import React from "react";
 /// internal modules ///
 import {fetchData} from "./data/fetch";
 import peopleAPI from "./data/swapi.co/people-api";
+import PeopleGrid from "./components/PeopleGrid";
 
 /// styles ///
 import "./App.css";
@@ -39,16 +40,9 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <div className="people deck">
-        {people.results.map ((el) => (
-          <div className="people card" key={el.url}>
-            <h3>{el.name}</h3>
-            <p>Homeworld: {el.homeworld}</p>
-            <p>Gender: {el.gender}</p>
-            <p>Born: {el.birth_year}</p>
-          </div>
-        ))}
-      </div>
+      <PeopleGrid
+        people={people.results}
+      />
     </div>
   );
 }
