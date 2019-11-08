@@ -2,6 +2,8 @@
 import React from "react";
 
 /// internal modules ///
+import {fetchData} from "./data/fetch";
+import peopleAPI from "./data/swapi.co/people-api";
 
 /// styles ///
 import "./App.css";
