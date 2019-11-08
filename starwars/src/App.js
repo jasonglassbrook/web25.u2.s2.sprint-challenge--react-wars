@@ -1,6 +1,22 @@
-import React from 'react';
-import './App.css';
+/// external modules ///
+import React from "react";
+import axios from "axios";
 
+/// internal modules ///
+
+/// styles ///
+import "./App.css";
+
+/***************************************
+  STATES
+***************************************/
+const init = {
+  "people" : [],
+};
+
+/***************************************
+  COMPONENTS
+***************************************/
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -16,4 +32,5 @@ const App = () => {
   );
 }
 
+/**************************************/
 export default App;
