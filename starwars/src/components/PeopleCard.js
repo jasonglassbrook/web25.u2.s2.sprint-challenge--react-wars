@@ -28,9 +28,7 @@ const PeopleCard = ({data}) => {
       <CardBody>
         <CardTitle>{data.name}</CardTitle>
         <CardText>
-          {data.name} was born in {data.birth_year}.
-          {cap (pro)} {conj (pro , "has")} {data.hair_color.toLowerCase ()} hair, {data.eye_color.toLowerCase ()} eyes, and {data.skin_color.toLowerCase ()} skin.
-          {cap (pro)} {conj (pro , "is")} {data.mass}kg and {data.height}cm tall.
+          {data.name} was born in {data.birth_year}. {cap (pro)} {conj (pro , "has")} {data.hair_color.toLowerCase ()} hair, {data.eye_color.toLowerCase ()} eyes, and {data.skin_color.toLowerCase ()} skin. {cap (pro)} {conj (pro , "is")} {data.mass}kg and {data.height}cm tall.
         </CardText>
       </CardBody>
     </Card>
