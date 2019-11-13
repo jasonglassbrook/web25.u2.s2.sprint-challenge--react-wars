@@ -2,7 +2,22 @@
   text-align: center;
 }
 .Header {
+  padding: 15px;
+  font-size: 3.6rem;
+
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.people.grid.card-deck {
+  margin: 0 auto;
+}
+
+.card-deck > .row .card {
+  margin: 15px;
+}
+
+.card-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+}

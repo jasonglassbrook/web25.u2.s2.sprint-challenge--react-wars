@@ -1,6 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+/// external modules ///
+import React from "react";
+import ReactDOM from "react-dom";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+/// internal modules ///
+import App from "./App";
+
+/// styles ///
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./index.css";
+
+/// do the thing ///
+ReactDOM.render (<App /> , document.getElementById ("root"));
